@@ -11,7 +11,7 @@ namespace karta_pracy
 {
     public partial class Form1 : Form
     {
-        public List<Form1> dane = new List<Form1>();
+        
         public Form1()
         {
             InitializeComponent();
@@ -134,7 +134,7 @@ namespace karta_pracy
         private void button2_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Przed zapisem");
-            /*Document doc = new Document();
+            Document doc = new Document();
             using (var stream = new FileStream("karta.pdf", FileMode.Create, FileAccess.Write, FileShare.None))
             {
                 PdfWriter.GetInstance(doc, stream);
@@ -146,16 +146,8 @@ namespace karta_pracy
                 }
                 doc.Close();
                 MessageBox.Show("Udalo sie!");
-            }*/
-
-            PrintDialog dialog1 = new PrintDialog();
-            dialog1.Document = printDocument1;
-            DialogResult r = dialog1.ShowDialog();
-
-            if(r == DialogResult.OK) 
-            {
-                printDocument1.Print();
             }
+
         }
     }
 }
