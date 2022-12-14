@@ -10,7 +10,9 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="ArrayToPdf" Version="2.0.5" />
     <PackageReference Include="iTextSharp" Version="5.5.13.3" />
+    <PackageReference Include="SautinSoft.PdfVision" Version="6.2.11.16" />
   </ItemGroup>
 
   <ItemGroup>

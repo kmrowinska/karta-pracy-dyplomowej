@@ -63,6 +63,8 @@
             this.textBox10 = new System.Windows.Forms.TextBox();
             this.textBox11 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -365,19 +367,30 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(695, 704);
+            this.button1.Location = new System.Drawing.Point(662, 791);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(94, 29);
+            this.button1.Size = new System.Drawing.Size(109, 29);
             this.button1.TabIndex = 33;
-            this.button1.Text = "zapisz";
+            this.button1.Text = "zapis do .peg";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(662, 826);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(109, 29);
+            this.button2.TabIndex = 34;
+            this.button2.Text = ".peg na .pdf";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(811, 745);
+            this.ClientSize = new System.Drawing.Size(793, 856);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBox11);
             this.Controls.Add(this.textBox10);
@@ -456,5 +469,7 @@
         private TextBox textBox10;
         private TextBox textBox11;
         private Button button1;
+        private Button button2;
+        private System.Drawing.Printing.PrintDocument printDocument1;
     }
 }
