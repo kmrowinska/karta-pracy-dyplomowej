@@ -64,7 +64,6 @@
             this.textBox11 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.saveFileDialog1 = new System.Windows.Forms.SaveFileDialog();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -470,6 +469,5 @@
         private TextBox textBox11;
         private Button button1;
         private Button button2;
-        private SaveFileDialog saveFileDialog1;
     }
 }
